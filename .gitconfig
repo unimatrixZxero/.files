@@ -1,0 +1,22 @@
+[user]
+	name = Sam Figueroa
+	email = unimatrixzxero@gmail.com
+[color]
+	ui = auto
+	interactive = auto
+[alias]
+	st = status
+	ci = commit
+	df = diff
+	gr = log --graph
+	co = checkout
+  br = branch
+  cp = cherry-pick
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+[core]
+	excludesfile = /Users/neo/.gitignore
+	quotepath = false
+[push]
+	default = tracking
+[github]
+	user = unimatrixzxero
