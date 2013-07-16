@@ -12,6 +12,7 @@
 	co = checkout
   br = branch
   cp = cherry-pick
+  sh = show
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
 [core]
 	excludesfile = /Users/neo/.gitignore
