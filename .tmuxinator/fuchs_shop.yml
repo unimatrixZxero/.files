@@ -1,0 +1,12 @@
+# ~/.tmuxinator/fuchs_shop.yml
+project_name: fuchs_shop
+project_root: ~/www/fuchs_shop
+socket_name: soschmekcts
+rvm: ruby-1.9.3-p194@fuchs_shop
+pre: launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+tabs:
+  - shell: git pull
+  - database: rails db
+  - server: fs
+  - logs: tail -f logs/development.log
+  - console: rails c
