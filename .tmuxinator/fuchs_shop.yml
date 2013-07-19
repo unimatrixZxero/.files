@@ -6,9 +6,11 @@ rvm: ruby-1.9.3-p194@fuchs_shop
 pre:
   - launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 tabs:
-  - shell: git pull
-  - database: rails db
+  - shell:
+    - git fetch
+    - git pull
+    - subl .
   - server: foreman start
   - logs: tail -f log/*.log
+  - database: rails db
   - console: rails c
-  - shell: subl .
