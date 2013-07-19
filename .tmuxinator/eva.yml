@@ -1,0 +1,15 @@
+# ~/.tmuxinator/eva.yml
+project_name: eva
+project_root: ~/www/contactmanagement
+socket_name: eva
+rvm: ruby-1.8.7-p371@eva --create
+pre:
+  - launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+tabs:
+  - shell:
+    - git fetch
+    - git pull
+  - server: foreman start
+  - logs: tail -f log/*.log
+  - console: script/console
+  - shell: subl .
