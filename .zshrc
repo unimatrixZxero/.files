@@ -228,6 +228,7 @@ motd_$(( $RANDOM % 3 + 1))
 
 __rvm_project_rvmrc
 
+export DISABLE_AUTO_TITLE=true
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
