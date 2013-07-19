@@ -1,0 +1,18 @@
+apps:
+  - 'connect_trusted_shops'
+  - 'Google Chrome'
+  - 'Propane'
+  - 'Adium'
+  - 'TextExpander'
+  - 'Sublime Text 2'
+  - 'iTerm'
+  - 'Freckle'
+  - 'mite yo.lk'
+
+urls:
+  - 'https://www.google.com/calendar'
+  - 'http://gmail.com'
+  - 'https://drive.google.com'
+  - 'http://peterlih.letsfreckle.com'
+  - 'https://zweitag-de.socialcast.com/home'
+  - 'http://localhost:3000'
