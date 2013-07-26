@@ -8,6 +8,7 @@ apps:
   - 'iTerm'
   - 'Freckle'
   - 'mite yo.lk'
+  - 'trello'
 
 urls:
   - 'https://www.google.com/calendar'
