@@ -231,3 +231,12 @@ export DISABLE_AUTO_TITLE=true
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+function _update_ruby_version()
+{
+    typeset -g ruby_version=''
+    if which rbenv &> /dev/null; then
+      ruby_version="$(rbenv version-name)"
+    fi
+}
+chpwd_functions+=(_update_ruby_version)
