@@ -21,7 +21,7 @@ plugins=(git rails ruby textmate brew rails3 bundler osx sublime jira fasd)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/script:/Users/safi/.rvm/gems/ruby-1.9.3-p194/bin:/Users/safi/.rvm/bin:/usr/local/bin:/usr/local/sbin:/usr/local/lib:/Users/neo/script:/Users/neo/Dropbox/script:/Users/neo/script/perl:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin:/usr/local/Cellar/node/0.8.8/bin:/usr/local/share/npm/bin:$PATH
+export PATH=$HOME/script:/usr/local/bin:/usr/local/sbin:/usr/local/lib:/Users/neo/script:/Users/neo/Dropbox/script:/Users/neo/script/perl:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin:/usr/local/Cellar/node/0.8.8/bin:/usr/local/share/npm/bin:$PATH
 
 function food {
   ruby -r "~/Dropbox/script/ruby/food.rb" -e "$1"
@@ -226,9 +226,8 @@ EOF
 # motd_`ruby -e 'puts rand(1..2)'`
 motd_$(( $RANDOM % 3 + 1))
 
-__rvm_project_rvmrc
-
 export DISABLE_AUTO_TITLE=true
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
