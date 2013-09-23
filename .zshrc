@@ -18,6 +18,8 @@ export DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git rails ruby textmate brew rails3 bundler osx sublime jira fasd)
 
+COMPLETION_WAITING_DOTS="true"
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
