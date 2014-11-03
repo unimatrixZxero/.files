@@ -7,6 +7,7 @@ This is a collection of my personal dot files and like wise that configure my wo
 - apple-gcc42
 - curl-ca-bundle
 - fasd
+- figlet
 - gdbm
 - haproxy
 - htop-osx
