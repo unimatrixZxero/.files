@@ -4,25 +4,25 @@ This is a collection of my personal dot files and like wise that configure my wo
 # Required/Favorite Packages & Gems
 ## Homebrew
 - ack
-- mysql
-- readline
 - apple-gcc42
+- curl-ca-bundle
+- fasd
+- gdbm
 - haproxy
-- redis
 - htop-osx
 - memcache-top
-- pcre
-- ssldump
-- curl-ca-bundle
-- phantomjs
-- tmux
-- fasd
-- tree
 - mpg123
-- watch
-- gdbm
 - mpg321
+- mysql
+- pcre
+- phantomjs
 - qt
+- readline
+- redis
+- ssldump
+- tmux
+- tree
+- watch
 - zsh
 
 ## Gems
