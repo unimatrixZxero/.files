@@ -16,7 +16,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails ruby textmate brew rails3 bundler osx sublime jira fasd)
+plugins=(git rails ruby textmate brew bundler osx sublime jira zsh-syntax-highlighting fasd)
 
 COMPLETION_WAITING_DOTS="true"
 
