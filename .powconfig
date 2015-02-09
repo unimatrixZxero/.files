@@ -1,3 +1,5 @@
 export PATH="/usr/local/opt/rbenv/bin:$PATH"
 export HOME=/Users/safi
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/bin:$PATH"
+export POW_TIMEOUT=900
+export POW_WORKERS=4
