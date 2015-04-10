@@ -2,6 +2,7 @@
 PLATFORM = RUBY_PLATFORM unless defined? PLATFORM
 #require 'autotest/growl'
 #require 'redgreen/autotest'
+# require 'redgreen'
 require 'autotest/fsevent'
 require 'autotest/restart'
 require 'autotest/timestamp'
@@ -20,6 +21,13 @@ Autotest.add_hook :reset do |at|
   at.clear_mappings
   at.add_mapping(/^(.*?)(_test)?\.rb$/) { |filename, m| m[2] ? filename : "#{m[1]}_test.rb" }
   at.add_mapping(/^(.*?)(_spec)?\.rb$/) { |filename, m| m[2] ? filename : "#{m[1]}_spec.rb" }
+  at.add_mapping(%r%^*(lib)/.*rb$%, true) {
+    at.files_matching %r%^test/.*_test.rb$%
+  }
+  # Now add support for the test files themselves
+  at.add_mapping(%r%^test/(.*)/(.*)\.rb$%) do |file, m|
+    at.files_matching %r%#{file}%
+  end
 end
 
 Autotest.options.tap do |o|
@@ -27,6 +35,11 @@ Autotest.options.tap do |o|
   o[:no_full_after_failed] = true
 end
 
-# Autotest.add_hook :all_good do
-#   system("type say &>/dev/null && say 'Fuck yeah!'")
-# end
+#Autotest.add_hook :all_good do
+#  system("type say &>/dev/null && say 'Fuck yeah!'")
+#end
+
+Autotest.send(:alias_method, :real_make_test_cmd, :make_test_cmd)
+Autotest.send(:define_method, :make_test_cmd) do |*args|
+  real_make_test_cmd(*args).sub('test/unit', %[rubygems -e "require 'redgreen'"])
+end
