@@ -76,8 +76,8 @@ alias dick='dig'
 
 
 #export LOLCOMMITS_DEVICE='FaceTime HD Camera (Display)'
-export LOLCOMMITS_ANIMATE=3
-export LOLCOMMITS_FORK=true
+export LOLCOMMITS_ANIMATE=2
+export LOLCOMMITS_FORK=1
 export EDITOR='subl -w'
 fpath=(~/.zsh/Completion $fpath)
 
