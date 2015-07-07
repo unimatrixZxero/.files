@@ -76,7 +76,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 13,
+	"font_size": 11,
 	"freesia_borderless": true,
 	"freesia_small_vscroll": true,
 	"highlight_current_line": true,
@@ -85,28 +85,36 @@
 	"highlight_trailing_spaces_color_name": "comment",
 	"ignored_packages":
 	[
+		"CodeFormatter",
 		"Rails Migrations List",
-		"SublimeREPL",
+		"Rails Related Files",
 		"SCSS",
+		"SublimeREPL",
+		"SCSS Snippets",
 		"SyncedSideBar",
 		"Ruby on Rails snippets",
-		"SCSS Snippets",
-		"SmartMarkdown",
-		"SublimeLinter",
-		"CodeFormatter",
 		"SublimeERB",
-		"Rails Related Files"
+		"SmartMarkdown"
 	],
 	"indent_guide_options":
 	[
 		"draw_active"
 	],
+	"indexing": true,
 	"margin": 2,
 	"match_brackets_angle": true,
 	"match_brackets_braces": true,
 	"match_quotes": true,
 	"match_tags": true,
 	"overlay_scroll_bars": "enabled",
+	"paths":
+	{
+		"osx":
+		[
+			"~/.rbenv/shims",
+			"/usr/local/bin"
+		]
+	},
 	"reveal-on-activate": false,
 	"rulers":
 	[
@@ -117,17 +125,15 @@
 	"show_encoding": true,
 	"show_full_path": true,
 	"show_line_endings": true,
-	"soda_classic_tabs": true,
 	"sublimelinter": true,
 	"sublimelinter_executable_map":
 	{
-		"ruby": "/Users/safi/.rvm/rubies/ruby-1.9.3-p194/bin/ruby"
+		"ruby": "/Users/safi/.rbenv/shims/ruby"
 	},
 	"sublimelinter_fill_outlines": false,
 	"sublimelinter_gutter_marks": true,
-	"tab_height_short": true,
 	"tab_size": 2,
-	"theme": "Gravity.sublime-theme",
+	"theme": "Soda SolarizedDark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
