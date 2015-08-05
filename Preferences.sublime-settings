@@ -85,16 +85,16 @@
 	"highlight_trailing_spaces_color_name": "comment",
 	"ignored_packages":
 	[
-		"CodeFormatter",
-		"Rails Migrations List",
+		"SyncedSideBar",
+		"Ruby on Rails snippets",
 		"Rails Related Files",
+		"SmartMarkdown",
+		"Rails Migrations List",
 		"SCSS",
 		"SublimeREPL",
 		"SCSS Snippets",
-		"SyncedSideBar",
-		"Ruby on Rails snippets",
-		"SublimeERB",
-		"SmartMarkdown"
+		"CodeFormatter",
+		"SublimeERB"
 	],
 	"indent_guide_options":
 	[
