@@ -89,6 +89,8 @@ export ANDROID_NDK=/usr/local/Cellar/android-ndk/r8c
 export DISABLE_AUTO_TITLE=true
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
+eval "$(rbenv init -)"
+
 function _update_ruby_version()
 {
     typeset -g ruby_version=''
