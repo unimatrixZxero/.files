@@ -5,6 +5,7 @@ require "wirble"
 require 'ap'
 require "pp"
 require 'irb/completion'
+require 'irb/ext/save-history'
 require 'hirb'; Hirb.enable; extend Hirb::Console
 
 Wirble.init
@@ -31,7 +32,7 @@ end
 def test_routes
   include ActionController::UrlWriter
   default_url_options[:host] = 'fbi.gov'
-end  
+end
 
 def show_history
   ap Readline::HISTORY.to_a
@@ -39,10 +40,10 @@ end
 
 #load File.dirname(FILE) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV']
 
-alias q exit
+alias :q :exit
 
-HASH = { 
-  :bob => 'Marley', :mom => 'Barley', 
+HASH = {
+  :bob => 'Marley', :mom => 'Barley',
   :gods => 'Harley', :chris => 'Farley'} unless defined?(HASH)
 ARRAY = HASH.keys unless defined?(ARRAY)
 
@@ -53,5 +54,3 @@ class Object
 end
 
 puts ".irbrc loaded"
-
-alias r! reload!
