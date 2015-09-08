@@ -76,7 +76,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 11,
+	"font_size": 12,
 	"freesia_borderless": true,
 	"freesia_small_vscroll": true,
 	"highlight_current_line": true,
@@ -85,16 +85,16 @@
 	"highlight_trailing_spaces_color_name": "comment",
 	"ignored_packages":
 	[
-		"SyncedSideBar",
-		"Ruby on Rails snippets",
-		"Rails Related Files",
-		"SmartMarkdown",
-		"Rails Migrations List",
-		"SCSS",
-		"SublimeREPL",
-		"SCSS Snippets",
 		"CodeFormatter",
-		"SublimeERB"
+		"Rails Migrations List",
+		"Rails Related Files",
+		"SublimeREPL",
+		"Ruby on Rails snippets",
+		"SCSS",
+		"SyncedSideBar",
+		"SCSS Snippets",
+		"SublimeERB",
+		"SmartMarkdown"
 	],
 	"indent_guide_options":
 	[
@@ -112,7 +112,8 @@
 		"osx":
 		[
 			"~/.rbenv/shims",
-			"/usr/local/bin"
+			"/usr/local/bin",
+			"/Users/neo/.rbenv/shims"
 		]
 	},
 	"reveal-on-activate": false,
