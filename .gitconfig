@@ -1,6 +1,7 @@
 [user]
 	name = Sam Figueroa
 	email = unimatrixzxero@gmail.com
+        logallrefupdates = true
 [color]
 	ui = auto
 	interactive = auto
