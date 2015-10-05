@@ -79,6 +79,9 @@ alias dick='dig'
 export LOLCOMMITS_ANIMATE=2
 export LOLCOMMITS_FORK=1
 export EDITOR='subl -w'
+# enable speaking deploy messages
+export TALKTOMEBABY=1
+
 fpath=(~/.zsh/Completion $fpath)
 
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r21
