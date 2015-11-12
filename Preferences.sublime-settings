@@ -88,13 +88,13 @@
 		"CodeFormatter",
 		"Rails Migrations List",
 		"Rails Related Files",
-		"SublimeREPL",
 		"Ruby on Rails snippets",
 		"SCSS",
-		"SyncedSideBar",
 		"SCSS Snippets",
+		"SmartMarkdown",
 		"SublimeERB",
-		"SmartMarkdown"
+		"SublimeREPL",
+		"SyncedSideBar"
 	],
 	"indent_guide_options":
 	[
