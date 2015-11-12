@@ -12,7 +12,7 @@ Wirble.init
 Wirble.colorize
 
 IRB.conf[:SAVE_HISTORY] = 100
-IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-save-history"
+IRB.conf[:HISTORY_FILE] = "~/.irb-save-history"
 IRB.conf[:USE_READLINE] = true
 IRB.conf[:AUTO_INDENT]=true
 
