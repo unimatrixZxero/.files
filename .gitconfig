@@ -1,7 +1,6 @@
 [user]
 	name = Sam Figueroa
 	email = unimatrixzxero@gmail.com
-        logallrefupdates = true
 [color]
 	ui = auto
 	interactive = auto
@@ -22,6 +21,7 @@
 [core]
 	excludesfile = /Users/neo/.gitignore
 	quotepath = false
+        logallrefupdates = true
 [push]
 	default = tracking
 [github]
