@@ -7,8 +7,8 @@
 	interactive = auto
 [alias]
 	st = status
-	ci = commit
 	s = status -sb
+	ci = commit -v
 	df = diff --ignore-blank-lines -w
 	gr = log --graph
 	co = checkout
