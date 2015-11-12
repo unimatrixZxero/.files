@@ -76,7 +76,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 12,
+	"font_size": 11,
 	"freesia_borderless": true,
 	"freesia_small_vscroll": true,
 	"highlight_current_line": true,
