@@ -8,6 +8,7 @@
 [alias]
 	st = status
 	ci = commit
+	s = status -sb
 	df = diff --ignore-blank-lines -w
 	gr = log --graph
 	co = checkout
