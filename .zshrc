@@ -35,10 +35,6 @@ source ~/Dropbox/script/grep_local_routes.sh
 alias e='subl .'
 alias o='open .' #open current directory in finder
 
-alias fork='open . -a /Users/neo/Applications/ForkLift.app'
-
-alias phperror='clear;tail -f /var/log/apache2/error_log'
-
 # rails development aliases
 alias ss='script/server'
 alias rs='bundle install && rake db:migrate && rails server'
@@ -61,9 +57,6 @@ alias gti='git'
 alias bashws="git ci -m 'bash trailing whitespace'"
 alias gdf='git diff'
 
-# mage stuff
-alias mconfig='cat app/etc/local.xml'
-
 # sound it out
 alias bell='mpg123 /Users/safi/Dropbox/sounds/campfire_horn.mp3'
 alias beep='bell'
@@ -74,6 +67,8 @@ alias crap='cap'
 alias poop='git push'
 alias dick='dig'
 
+# misc
+alias cal='ncal'
 
 #export LOLCOMMITS_DEVICE='FaceTime HD Camera (Display)'
 export LOLCOMMITS_ANIMATE=2
