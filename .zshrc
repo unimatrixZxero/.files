@@ -56,6 +56,7 @@ alias hard_reset='git reset --hard && git clean -d -f'
 alias gti='git'
 alias bashws="git ci -m 'bash trailing whitespace'"
 alias gdf='git diff'
+alias gst='./bin/rubocop-git ; git status '
 
 # sound it out
 alias bell='mpg123 /Users/safi/Dropbox/sounds/campfire_horn.mp3'
@@ -71,8 +72,8 @@ alias dick='dig'
 alias cal='ncal'
 
 #export LOLCOMMITS_DEVICE='FaceTime HD Camera (Display)'
-export LOLCOMMITS_ANIMATE=2
-export LOLCOMMITS_FORK=1
+#export LOLCOMMITS_ANIMATE=2
+#export LOLCOMMITS_FORK=1
 export EDITOR='subl -w'
 # enable speaking deploy messages
 export TALKTOMEBABY=1
