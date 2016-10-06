@@ -34,6 +34,7 @@ source ~/Dropbox/script/grep_local_routes.sh
 # one'zies
 alias e='subl .'
 alias o='open .' #open current directory in finder
+alias vi=$EDITOR
 
 # rails development aliases
 alias ss='script/server'

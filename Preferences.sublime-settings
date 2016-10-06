@@ -68,8 +68,11 @@
 		"solr/data",
 		"log",
 		"vendor/assets/bower_components",
+		"bower_components",
 		"solr_test/data",
-		"solr/data"
+		"solr/data",
+		"node_modules*",
+		"node_modules"
 	],
 	"font_face": "Source Code Pro Bold",
 	"font_options":
@@ -86,9 +89,9 @@
 	"ignored_packages":
 	[
 		"CodeFormatter",
+		"Markdown",
 		"Rails Migrations List",
 		"Rails Related Files",
-		"Ruby on Rails snippets",
 		"SCSS",
 		"SCSS Snippets",
 		"SmartMarkdown",
