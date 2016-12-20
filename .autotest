@@ -7,8 +7,8 @@ require 'autotest/fsevent'
 require 'autotest/restart'
 require 'autotest/timestamp'
 
-require '~/.sound/sound.rb'
-Autotest::Sound.sound_path = "~/.sound/sound_fx/"
+#require '~/.sound/sound.rb'
+#Autotest::Sound.sound_path = "~/.sound/sound_fx/"
 
 # Autotest::Growl::show_modified_files = true
 
