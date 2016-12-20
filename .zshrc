@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="sporty_256"
+export ZSH_THEME="sporty_sam"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -16,7 +16,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails ruby textmate brew bundler osx sublime jira zsh-syntax-highlighting fasd)
+plugins=(git rails ruby textmate brew osx sublime jira zsh-syntax-highlighting fasd)
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -24,12 +24,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$HOME/script:/usr/local/bin:/usr/local/sbin:/usr/local/lib:/Users/neo/script:/Users/neo/Dropbox/script:/Users/neo/script/perl:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin:/usr/local/Cellar/node/0.8.8/bin:/usr/local/share/npm/bin:/Users/neo/www/revolution/bin:$PATH
-
-function food {
-  ruby -r "~/Dropbox/script/ruby/food.rb" -e "$1"
-}
-
-source ~/Dropbox/script/grep_local_routes.sh
 
 # one'zies
 alias e='subl .'
@@ -48,9 +42,11 @@ alias rr='rake routes'
 alias lh3='open http://localhost:3000'
 alias syck_shit='RUBYOPT="-rpsych" bundle install'
 alias preflight_check='bundle install; rake db:migrate; autotest'
+alias tests='npm test && parallel_rspec spec'
 
 #git stuff
 alias eat='clear; git pull ; glg --no-merges --max-count=7'
+alias poop='git push'
 alias cut='git branch -d'
 alias branch='git co -b'
 alias hard_reset='git reset --hard && git clean -d -f'
@@ -64,27 +60,15 @@ alias bell='mpg123 /Users/safi/Dropbox/sounds/campfire_horn.mp3'
 alias beep='bell'
 alias notify='say "command completed"'
 
-# 4 t3h LULz
-alias crap='cap'
-alias poop='git push'
-alias dick='dig'
-
 # misc
 alias cal='ncal'
 
-#export LOLCOMMITS_DEVICE='FaceTime HD Camera (Display)'
-#export LOLCOMMITS_ANIMATE=2
-#export LOLCOMMITS_FORK=1
-export EDITOR='subl -w'
+export EDITOR='vim'
+
 # enable speaking deploy messages
 export TALKTOMEBABY=1
 
 fpath=(~/.zsh/Completion $fpath)
-
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r21
-export ANDROID_SDK=/usr/local/Cellar/android-sdk/r21
-export ANDROID_NDK_ROOT=/usr/local/Cellar/android-ndk/r8c
-export ANDROID_NDK=/usr/local/Cellar/android-ndk/r8c
 
 export DISABLE_AUTO_TITLE=true
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
