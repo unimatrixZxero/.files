@@ -4,14 +4,16 @@ This is a collection of my personal dot files and like wise that configure my wo
 # Required/Favorite Packages & Gems
 ## Homebrew
 - ack
-- apple-gcc42
+- archey
+- cloc
+- ctags
 - curl-ca-bundle
+- docker
 - fasd
 - figlet
-- gdbm
-- haproxy
+- git
 - htop-osx
-- memcache-top
+- jmeter
 - mpg123
 - mpg321
 - mysql
@@ -20,10 +22,14 @@ This is a collection of my personal dot files and like wise that configure my wo
 - qt
 - readline
 - redis
+- ruby-install
 - ssldump
+- the_silver_searcher (ag)
 - tmux
 - tree
+- vim
 - watch
+- youtubedl
 - zsh
 
 ## Gems
@@ -36,6 +42,7 @@ This is a collection of my personal dot files and like wise that configure my wo
 - cheat 
 - foreman 
 - git 
+- git-up
 - git_statistics 
 - github-linguist 
 - gitjour 
