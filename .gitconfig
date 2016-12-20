@@ -20,6 +20,7 @@
   newstuff = log --pretty=format:'%Cred%h %Cgreen%<(6,trunc)%cr %Cblue%<(20)%an %Creset%<(51,trunc)%s %Cred%<(20)%d'` origin/production..origin/master
 	please = push --force-with-lease
 	commend = commit --amend --no-edit
+  changes = !sh -c 'git $0 $@ HEAD ^$(git merge-base --fork-point master)'
 
 [core]
 	excludesfile = /Users/neo/.gitignore
