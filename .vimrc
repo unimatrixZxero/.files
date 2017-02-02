@@ -1,12 +1,12 @@
 set nocompatible
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
 set history=300
 set number
 syntax enable
 set autoread
 set ruler
 set cursorline
-set showmatch 
+set showmatch
 set cmdheight=2
 set expandtab
 set smarttab
@@ -18,6 +18,7 @@ set laststatus=2
 set lazyredraw
 set backupdir=/tmp
 
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 function! HasPaste()
     if &paste
