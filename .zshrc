@@ -23,7 +23,9 @@ COMPLETION_WAITING_DOTS="true"
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/script:/usr/local/bin:/usr/local/sbin:/usr/local/lib:/Users/neo/script:/Users/neo/Dropbox/script:/Users/neo/script/perl:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin:/usr/local/Cellar/node/0.8.8/bin:/usr/local/share/npm/bin:/Users/neo/www/revolution/bin:$PATH
+export PATH=$HOME/script:/usr/local/opt/node@6/bin:/usr/local/bin:/usr/local/sbin:/usr/local/lib:/Users/neo/script:/Users/neo/Dropbox/script:/Users/neo/script/perl:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin:/Users/neo/www/revolution/bin:$PATH
+
+export EDITOR='vim'
 
 # one'zies
 alias e='subl .'
@@ -62,8 +64,6 @@ alias notify='say "command completed"'
 
 # misc
 alias cal='ncal'
-
-export EDITOR='vim'
 
 # enable speaking deploy messages
 export TALKTOMEBABY=1
