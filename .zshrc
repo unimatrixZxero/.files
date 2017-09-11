@@ -62,6 +62,7 @@ alias notify='say "command completed"'
 
 # misc
 alias cal='ncal'
+alias caly='ncal -y'
 
 export EDITOR='vim'
 
