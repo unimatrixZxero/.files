@@ -65,6 +65,7 @@ alias cal='ncal'
 alias caly='ncal -y'
 
 export EDITOR='vim'
+export LC_ALL='en_US'
 
 # enable speaking deploy messages
 export TALKTOMEBABY=1
