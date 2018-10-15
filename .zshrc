@@ -101,7 +101,7 @@ function showlogo() {
 
   if [[ -d ~/.files/logos ]]; then
     LOGOS=( ~/.files/logos/* )
-    cat $LOGOS[$RANDOM%$#LOGOS+1]
+    /bin/cat $LOGOS[$RANDOM%$#LOGOS+1]
   else
     figlet -f larry3d `hostname -s`
   fi
