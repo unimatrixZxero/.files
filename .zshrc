@@ -23,9 +23,7 @@ COMPLETION_WAITING_DOTS="true"
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/script:/usr/local/opt/node@6/bin:/usr/local/bin:/usr/local/sbin:/usr/local/lib:/Users/neo/script:/Users/neo/Dropbox/script:/Users/neo/script/perl:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin:/Users/neo/www/revolution/bin:$PATH
-
-export EDITOR='vim'
+export PATH=$HOME/script:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/lib:/Users/neo/script:/Users/neo/Dropbox/script:/Users/neo/script/perl:/usr/bin:/usr/sbin:/bin:/sbin:/usr/X11/bin:/usr/local/Cellar/node/0.8.8/bin:/usr/local/share/npm/bin:$PATH
 
 # one'zies
 alias e='subl .'
@@ -55,7 +53,7 @@ alias hard_reset='git reset --hard && git clean -d -f'
 alias gti='git'
 alias bashws="git ci -m 'bash trailing whitespace'"
 alias gdf='git diff'
-alias gst='./bin/rubocop-git ; git status '
+alias gst='git status'
 
 # sound it out
 alias bell='mpg123 /Users/safi/Dropbox/sounds/campfire_horn.mp3'
@@ -64,6 +62,10 @@ alias notify='say "command completed"'
 
 # misc
 alias cal='ncal'
+alias caly='ncal -y'
+
+export EDITOR='vim'
+export LC_ALL='en_US'
 
 # enable speaking deploy messages
 export TALKTOMEBABY=1
@@ -99,7 +101,7 @@ function showlogo() {
 
   if [[ -d ~/.files/logos ]]; then
     LOGOS=( ~/.files/logos/* )
-    cat $LOGOS[$RANDOM%$#LOGOS+1]
+    /bin/cat $LOGOS[$RANDOM%$#LOGOS+1]
   else
     figlet -f larry3d `hostname -s`
   fi

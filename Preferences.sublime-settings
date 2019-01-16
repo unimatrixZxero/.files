@@ -122,9 +122,7 @@
 	"reveal-on-activate": false,
 	"rulers":
 	[
-		80,
-		115,
-		160
+		120
 	],
 	"show_encoding": true,
 	"show_full_path": true,

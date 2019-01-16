@@ -1,26 +1,28 @@
 [user]
 	name = Sam Figueroa
-	email = unimatrixzxero@gmail.com
+	email = sam@samuelfigueroa.com
+	signingkey = CCF881F482DE0690EE1F546EBF858226F7CBBE92
 [color]
 	ui = auto
 	interactive = auto
 [alias]
-	st = status
-	s = status -sb
+	br = branch
+  changes = !sh -c 'git $0 $@ HEAD ^$(git merge-base --fork-point master)'
 	ci = commit -v
+	co = checkout
+	commend = commit --amend --no-edit
+	cp = cherry-pick
 	df = diff --ignore-blank-lines -w
 	gr = log --graph
-	co = checkout
-	br = branch
-	cp = cherry-pick
-	sh = show
-	lol = log --pretty=oneline --abbrev-commit --graph --decorate
-	shame = blame -w -M
   l = log --pretty=format:'%Cred%h %Cgreen%<(6,trunc)%cr %Cblue%<(20)%an %Creset%<(51,trunc)%s %Cred%<(20)%d'`
-  newstuff = log --pretty=format:'%Cred%h %Cgreen%<(6,trunc)%cr %Cblue%<(20)%an %Creset%<(51,trunc)%s %Cred%<(20)%d'` origin/production..origin/master
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  newstuff = log --pretty=format:'%Cred%h %Cgreen%<(6,trunc)%cr %Cblue%<(20)%an %Creset%<(51,trunc)%s %Cred%<(20)%d'` origin/development..origin/master
 	please = push --force-with-lease
-	commend = commit --amend --no-edit
-  changes = !sh -c 'git $0 $@ HEAD ^$(git merge-base --fork-point master)'
+	s = status -sb
+	sh = show
+	shame = blame -w -M
+	st = status
+	up = fetch --all --prune --tags
 
 [core]
 	excludesfile = /Users/neo/.gitignore
