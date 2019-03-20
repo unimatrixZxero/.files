@@ -61,7 +61,7 @@ alias hard_reset='git reset --hard && git clean -d -f'
 alias gti='git'
 alias bashws="git ci -m 'bash trailing whitespace'"
 alias gdf='git diff'
-alias gst='git status'
+alias gst='rubocop-git ; git status'
 
 # sound it out
 alias bell='mpg123 ~/Dropbox/sounds/campfire_horn.mp3'
