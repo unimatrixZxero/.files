@@ -11,14 +11,22 @@ export ZSH_THEME="sporty_sam"
 # Comment this out to disable weekly auto-update checks
 export DISABLE_AUTO_UPDATE="true"
 
-# Uncomment following line if you want to disable colors in ls
-# export DISABLE_LS_COLORS="true"
+# enable speaking deploy messages
+export TALKTOMEBABY=1
+
+# report time if execution exceeds amount of seconds
+export REPORTTIME=2
+
+export EDITOR='vim'
+export LC_ALL='en_US'
+export DISABLE_AUTO_TITLE=true
+export CC=/usr/bin/gcc
+export COMPLETION_WAITING_DOTS="true"
+export SPRING_ON=1
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git rails ruby textmate brew osx sublime jira zsh-syntax-highlighting fasd)
-
-COMPLETION_WAITING_DOTS="true"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,15 +72,11 @@ alias notify='say "command completed"'
 alias cal='ncal'
 alias caly='ncal -y'
 
-export EDITOR='vim'
-export LC_ALL='en_US'
+# 4 T3H LOLZ
+alias cat='lolcat -t'
 
-# enable speaking deploy messages
-export TALKTOMEBABY=1
+fpath=(/usr/local/share/zsh-completions $fpath)
 
-fpath=(~/.zsh/Completion $fpath)
-
-export DISABLE_AUTO_TITLE=true
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 eval "$(rbenv init -)"
@@ -90,9 +94,6 @@ function howoften()
 {
   history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 }
-
-REPORTTIME=2                # report time if execution exceeds amount of seconds
-export CC=/usr/bin/gcc
 
 function showlogo() {
   if [[ -n $SKIP_LOGO && $SKIP_LOGO == "true" ]]; then
