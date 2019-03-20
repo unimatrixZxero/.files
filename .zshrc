@@ -64,7 +64,7 @@ alias gdf='git diff'
 alias gst='git status'
 
 # sound it out
-alias bell='mpg123 /Users/safi/Dropbox/sounds/campfire_horn.mp3'
+alias bell='mpg123 ~/Dropbox/sounds/campfire_horn.mp3'
 alias beep='bell'
 alias notify='say "command completed"'
 
