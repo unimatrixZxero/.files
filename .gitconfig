@@ -48,3 +48,4 @@
 	required = true
 [commit]
 	gpgsign = true
+	template = ~/.git_commit_msg
