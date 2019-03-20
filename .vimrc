@@ -16,7 +16,7 @@ set lbr
 set wrap
 set laststatus=2
 set lazyredraw
-set backupdir=/tmp
+set backupdir=~/tmp
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
@@ -26,5 +26,11 @@ function! HasPaste()
     endif
     return ''
 endfunction
+
+if $VIM_NOBACKUP
+  set nobackup
+  set nowritebackup
+endif
+set backupskip=/tmp/*,/private/tmp/*
 
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
