@@ -19,6 +19,7 @@ set lazyredraw
 set backupdir=~/tmp
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd filetype crontab setlocal nobackup nowritebackup
 
 function! HasPaste()
     if &paste
