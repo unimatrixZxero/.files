@@ -3,34 +3,7 @@ This is a collection of my personal dot files and like wise that configure my wo
 
 # Required/Favorite Packages & Gems
 ## Homebrew
-- ack
-- archey
-- cloc
-- ctags
-- curl-ca-bundle
-- docker
-- fasd
-- figlet
-- git
-- htop-osx
-- jmeter
-- mpg123
-- mpg321
-- mysql
-- pcre
-- phantomjs
-- qt
-- readline
-- redis
-- ruby-install
-- ssldump
-- the_silver_searcher (ag)
-- tmux
-- tree
-- vim
-- watch
-- youtubedl
-- zsh
+Take a look at the included `Brewfile` or just run `brew bundle install`
 
 ## Gems
 
