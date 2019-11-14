@@ -17,6 +17,8 @@ set wrap
 set laststatus=2
 set lazyredraw
 set backupdir=~/tmp
+set colorcolumn=120
+highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd filetype crontab setlocal nobackup nowritebackup
