@@ -73,7 +73,7 @@ alias cal='ncal'
 alias caly='ncal -y'
 
 # 4 T3H LOLZ
-alias cat='lolcat -t'
+alias cat='bat'
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
