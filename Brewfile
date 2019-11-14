@@ -24,5 +24,5 @@ brew "mpg321"
 cask "phantomjs"
 brew "tree"
 brew "watch"
-
-
+brew "fzf"
+brew "node"
