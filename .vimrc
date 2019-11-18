@@ -115,6 +115,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'altercation/vim-colors-solarized'
   Plug 'bronson/vim-trailing-whitespace'
+  Plug 'dominikduda/vim_current_word'
 call plug#end()
 
 colorscheme solarized
@@ -230,3 +231,8 @@ nmap <silent> <leader>c <Plug>CommentaryLine :normal j<CR>
 xmap <leader>c <Plug>Commentary
 
 " }}}
+
+" Current Word Highlight Settings
+let g:vim_current_word#highlight_delay = 1000
+let g:vim_current_word#highlight_only_in_focused_window = 0
+hi CurrentWordTwins ctermbg=250 cterm=bold,underline
