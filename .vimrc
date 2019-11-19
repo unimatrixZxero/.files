@@ -116,6 +116,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'altercation/vim-colors-solarized'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'dominikduda/vim_current_word'
+  Plug 'terryma/vim-smooth-scroll'
 call plug#end()
 
 colorscheme solarized
@@ -211,10 +212,10 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 " }}}
 
 " PLUGIN: vim-smooth-scroll {{{
-noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 20, 2)<CR>
-noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 20, 2)<CR>
-noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 20, 4)<CR>
-noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 20, 4)<CR>
+noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 4, 2)<CR>
+noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 4, 2)<CR>
+noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 4, 4)<CR>
+noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 4, 4)<CR>
 " }}}
 
 " PLUGIN: vim-commentary {{{
