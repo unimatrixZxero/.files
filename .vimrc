@@ -63,6 +63,12 @@ noremap <silent> <Down>  <Nop>
 noremap <silent> <Left>  <Nop>
 noremap <silent> <Right> <Nop>
 
+" Smart way to move between panes
+map <up> <C-w><up>
+map <down> <C-w><down>
+map <left> <C-w><left>
+map <right> <C-w><right>
+
 " Use 'H' and 'L' keys to move to start/end of the line
 noremap H g^
 noremap L g$
