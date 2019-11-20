@@ -123,6 +123,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'dominikduda/vim_current_word'
   Plug 'terryma/vim-smooth-scroll'
+  Plug 'svermeulen/vim-cutlass'
+  Plug 'svermeulen/vim-yoink'
+  Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 colorscheme solarized
@@ -238,6 +241,8 @@ nmap <silent> <leader>c <Plug>CommentaryLine :normal j<CR>
 xmap <leader>c <Plug>Commentary
 
 " }}}
+
+let g:yoinkIncludeDeleteOperations=1
 
 " Current Word Highlight Settings
 let g:vim_current_word#highlight_delay = 1000
