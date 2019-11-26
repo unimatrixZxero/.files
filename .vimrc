@@ -39,6 +39,9 @@ set background=dark
 set colorcolumn=120
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+set list
+set listchars=tab:>~
+
 "set columns=120
 
 " Timeout settings
