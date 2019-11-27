@@ -47,5 +47,5 @@
 	smudge = git lfs smudge %f
 	required = true
 [commit]
-	gpgsign = true
+	gpgsign = false 
 	template = ~/.git_commit_msg
