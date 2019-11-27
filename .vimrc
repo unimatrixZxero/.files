@@ -129,6 +129,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'svermeulen/vim-cutlass'
   Plug 'svermeulen/vim-yoink'
   Plug 'airblade/vim-gitgutter'
+  Plug 'jeffkreeftmeijer/vim-numbertoggle'
+  Plug 'tpope/vim-rails'
+  Plug 'xolox/vim-misc'
+  Plug 'xolox/vim-session'
 call plug#end()
 
 colorscheme solarized
@@ -169,6 +173,7 @@ command! -nargs=? -bang -complete=dir FzfFiles
       \ call fzf#vim#files(<q-args>, <bang>0 ? fzf#vim#with_preview('up:60%') : {}, <bang>0)
 
 " Mappings
+nnoremap <silent> <leader>f :FzfAg<CR>
 nnoremap <silent> <leader>o :FzfFiles<CR>
 nnoremap <silent> <leader>O :FzfFiles!<CR>
 nnoremap <silent> <leader>l  :FzfBuffers<CR>
@@ -251,3 +256,15 @@ let g:yoinkIncludeDeleteOperations=1
 let g:vim_current_word#highlight_delay = 1000
 let g:vim_current_word#highlight_only_in_focused_window = 0
 hi CurrentWordTwins ctermbg=250 cterm=bold,underline
+
+" Do not use arrows in Normal mode
+noremap <silent> <Up>    <Nop>
+noremap <silent> <Down>  <Nop>
+noremap <silent> <Left>  <Nop>
+noremap <silent> <Right> <Nop>
+
+" Smart way to move between panes
+map <up> <C-w><up>
+map <down> <C-w><down>
+map <left> <C-w><left>
+map <right> <C-w><right>
