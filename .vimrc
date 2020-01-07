@@ -2,7 +2,6 @@ set nocompatible
 set backspace=indent,eol,start
 set history=300
 set number
-
 set ttyfast
 
 " Automatically read files which are changed outside vim
@@ -133,6 +132,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-rails'
   Plug 'xolox/vim-misc'
   Plug 'xolox/vim-session'
+  Plug 'tpope/vim-commentary'
 call plug#end()
 
 colorscheme solarized
@@ -236,7 +236,6 @@ noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 4, 4)<CR>
 " }}}
 
 " PLUGIN: vim-commentary {{{
-
 augroup aug_commentary
   au!
 
@@ -247,7 +246,6 @@ augroup end
 " Comment line and move 1 line down
 nmap <silent> <leader>c <Plug>CommentaryLine :normal j<CR>
 xmap <leader>c <Plug>Commentary
-
 " }}}
 
 let g:yoinkIncludeDeleteOperations=1
@@ -268,3 +266,6 @@ map <up> <C-w><up>
 map <down> <C-w><down>
 map <left> <C-w><left>
 map <right> <C-w><right>
+
+" Add shortcut to fix whitespace
+nnoremap <silent> <leader>w :FixWhitespace<CR>
