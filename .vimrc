@@ -9,6 +9,9 @@ set autoread
 
 syntax enable
 
+" add to fix 'Scanning tags. E432: Tags file not sorted: tags' error
+set ignorecase
+
 set autoread
 set ruler
 set cursorline
