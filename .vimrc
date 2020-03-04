@@ -136,6 +136,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'xolox/vim-misc'
   Plug 'xolox/vim-session'
   Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-fugitive'
 call plug#end()
 
 colorscheme solarized
@@ -188,6 +189,7 @@ nnoremap <silent> <F1> :FzfHelptags<CR>
 inoremap <silent> <F1> <ESC>:FzfHelptags<CR>
 cnoremap <silent> <expr> <C-p> getcmdtype() == ":" ? "<C-u>:FzfHistory:\<CR>" : "\<ESC>:FzfHistory/\<CR>"
 cnoremap <silent> <C-_> <C-u>:FzfCommands<CR>
+nnoremap <silent> <leader>g :Gblame<CR>
 
 " fzf.Tags uses existing 'tags' file or generates it otherwise
 nnoremap <silent> <leader>] :FzfTags<CR>
