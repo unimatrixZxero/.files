@@ -141,7 +141,7 @@ call plug#end()
 
 colorscheme solarized
 
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ %{FugitiveStatusline()}\ L\(%l\)C\(%c\)\ %r%{getcwd()}%h\
+set statusline=%{HasPaste()}%r%{getcwd()}%h\ %{FugitiveStatusline()}\ L\(%l\)C\(%c\)\ %t
 
 " Settings PLUGIN: fzf.vim{{{
 
