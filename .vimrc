@@ -289,3 +289,5 @@ function! SetTerminalTitle()
 endfunction
 
 autocmd BufEnter * call SetTerminalTitle()
+
+nnoremap <silent> <Leader>F :FzfAg <C-R><C-W><CR>
