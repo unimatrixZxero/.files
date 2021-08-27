@@ -138,6 +138,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
   Plug 'itmammoth/run-rspec.vim'
+  Plug 'yuezk/vim-js'
+  Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 colorscheme solarized
