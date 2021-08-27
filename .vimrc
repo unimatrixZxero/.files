@@ -279,6 +279,8 @@ map <right> <C-w><right>
 nnoremap <silent> <leader>w :FixWhitespace<CR>
 
 " Set the title of the Terminal to the currently open file
+set t_ts=];
+set t_fs=
 function! SetTerminalTitle()
     let titleString = expand('%:t')
     if len(titleString) > 0
