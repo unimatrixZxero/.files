@@ -9,6 +9,9 @@ set autoread
 
 syntax enable
 
+" allwo to navigate away from modified buffers
+set hidden
+
 " add to fix 'Scanning tags. E432: Tags file not sorted: tags' error
 set ignorecase
 
