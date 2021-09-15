@@ -37,6 +37,8 @@ set laststatus=2
 set lazyredraw
 set backupdir=~/tmp
 
+set incsearch
+
 set splitright
 set splitbelow
 
@@ -46,6 +48,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 set list
 set listchars=tab:>~
+set scrolloff=10
 
 "set columns=120
 
