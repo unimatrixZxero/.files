@@ -144,7 +144,16 @@ call plug#end()
 
 colorscheme solarized
 
-set statusline=%{HasPaste()}%r%F%h\ %{FugitiveStatusline()}\ L\(%l\)C\(%c\)\ %t
+set statusline=\ %M
+set statusline+=\ %{HasPaste()}
+set statusline+=\ %r
+set statusline+=\ %F
+set statusline+=\ %h
+set statusline+=\ %{FugitiveStatusline()}
+set statusline+=%=
+set statusline+=%#StatusLineTerm#
+set statusline+=\ %c:%l/%L
+set statusline+=\ %t
 
 " Settings PLUGIN: fzf.vim{{{
 
