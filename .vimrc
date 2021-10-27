@@ -137,6 +137,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'xolox/vim-session'
   Plug 'tpope/vim-commentary'
   Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-surround'
   Plug 'itmammoth/run-rspec.vim'
 call plug#end()
 
