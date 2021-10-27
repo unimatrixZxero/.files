@@ -82,7 +82,7 @@ noremap L g$
 " Which can be undone with '<C-o>u'
 inoremap <C-r> <C-g>u<C-r>
 
-
+autocmd BufRead,BufNewFile *.md setlocal spell nowritebackup
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd filetype crontab setlocal nobackup nowritebackup
 
@@ -105,7 +105,7 @@ set backupskip=/tmp/*,/private/tmp/*
 " "bronson/vim-trailing-whitespaces" plugin is used for highlighting
 " Use :FixWhitespace to remove trailing whitespaces manually
 " Or "w0rp/ale" is used to automatically remove trailing whitespaces, extra empty lines at EOF, and more
-let g:extra_whitespace_ignored_filetypes = ['fugitive', 'markdown', 'diff', 'qf', 'help', 'ctrlsf']
+let g:extra_whitespace_ignored_filetypes = ['fugitive', 'diff', 'qf', 'help', 'ctrlsf']
 
 augroup aug_trailing_whitespaces
   au!
