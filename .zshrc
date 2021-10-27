@@ -78,14 +78,11 @@ alias cat='bat'
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-
-eval "$(rbenv init -)"
-
 function _update_ruby_version()
 {
     typeset -g ruby_version=''
-    if which rbenv &> /dev/null; then
-      ruby_version="$(rbenv version-name)"
+    if which asdf &> /dev/null; then
+      ruby_version="$(asdf which ruby | grep -o -e "[0-9]\.[0-9]\.[0-9]")"
     fi
 }
 chpwd_functions+=(_update_ruby_version)
