@@ -291,9 +291,10 @@ autocmd BufEnter * call SetTerminalTitle()
 
 nnoremap <silent> <Leader>F :FzfAg <C-R><C-W><CR>
 
-let g:run_rspec_bin = 'spring rspec'
+let g:run_rspec_bin = 'bundle exec rspec'
 " let g:run_rspec_command_option = ''
 nnoremap <leader>r :RunSpec<CR>
 nnoremap <leader>L :RunSpecLine<CR>
 nnoremap <leader>e :RunSpecLastRun<CR>
 nnoremap <leader>R :RunSpecCloseResult<CR>
+
