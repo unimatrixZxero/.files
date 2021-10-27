@@ -49,3 +49,5 @@
 [commit]
 	gpgsign = false 
 	template = ~/.git_commit_msg
+[receive]
+	advertisepushoptions = true
