@@ -7,16 +7,16 @@
 	interactive = auto
 [alias]
 	br = branch
-  changes = !sh -c 'git $0 $@ HEAD ^$(git merge-base --fork-point master)'
+	changes = !sh -c 'git $0 $@ HEAD ^$(git merge-base --fork-point master)'
 	ci = commit -v
 	co = checkout
 	commend = commit --amend --no-edit
 	cp = cherry-pick
 	df = diff --ignore-blank-lines -w
 	gr = log --graph
-  l = log --pretty=format:'%Cred%h %Cgreen%<(6,trunc)%cr %Cblue%<(20)%an %Creset%<(51,trunc)%s %Cred%<(20)%d'`
+	l = log --pretty=format:'%Cred%h %Cgreen%<(6,trunc)%cr %Cblue%<(20)%an %Creset%<(51,trunc)%s %Cred%<(20)%d'`
 	lol = log --pretty=oneline --abbrev-commit --graph --decorate
-  newstuff = log --pretty=format:'%Cred%h %Cgreen%<(6,trunc)%cr %Cblue%<(20)%an %Creset%<(51,trunc)%s %Cred%<(20)%d'` origin/development..origin/master
+	newstuff = log --pretty=format:'%Cred%h %Cgreen%<(6,trunc)%cr %Cblue%<(20)%an %Creset%<(51,trunc)%s %Cred%<(20)%d'` origin/development..origin/master
 	please = push --force-with-lease
 	s = status -sb
 	sh = show
@@ -27,7 +27,8 @@
 [core]
 	excludesfile = /Users/neo/.gitignore
 	quotepath = false
-        logallrefupdates = true
+	logallrefupdates = true
+	attributesfile = /Users/neo/.gitattributes
 [push]
 	default = tracking
 [github]
@@ -47,7 +48,9 @@
 	smudge = git lfs smudge %f
 	required = true
 [commit]
-	gpgsign = false 
+	gpgsign = false
 	template = ~/.git_commit_msg
 [receive]
 	advertisepushoptions = true
+[diff "rspec"]
+	xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario|background)[ \t].*)$"

@@ -9,6 +9,9 @@ set autoread
 
 syntax enable
 
+" allwo to navigate away from modified buffers
+set hidden
+
 " add to fix 'Scanning tags. E432: Tags file not sorted: tags' error
 set ignorecase
 
@@ -34,6 +37,8 @@ set laststatus=2
 set lazyredraw
 set backupdir=~/tmp
 
+set incsearch
+
 set splitright
 set splitbelow
 
@@ -43,6 +48,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 set list
 set listchars=tab:>~
+set scrolloff=10
 
 "set columns=120
 
@@ -139,14 +145,25 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-surround'
   Plug 'itmammoth/run-rspec.vim'
+  Plug 'yuezk/vim-js'
+  Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 colorscheme solarized
 
-set statusline=%{HasPaste()}%r%F%h\ %{FugitiveStatusline()}\ L\(%l\)C\(%c\)\ %t
+set statusline=\ %M
+set statusline+=\ %{HasPaste()}
+set statusline+=\ %r
+set statusline+=\ %F
+set statusline+=\ %h
+set statusline+=\ %{FugitiveStatusline()}
+set statusline+=%=
+set statusline+=%#StatusLineTerm#
+set statusline+=\ %c:%l/%L
+set statusline+=\ %t
 
 " Settings PLUGIN: fzf.vim{{{
-
+let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4 --preview 'bat --color=always --style=header,grid --line-range :300 {}'"
 let g:fzf_layout = { 'down': '~40%' }
 
 " Populate quickfix list with selected files
@@ -278,6 +295,8 @@ map <right> <C-w><right>
 nnoremap <silent> <leader>w :FixWhitespace<CR>
 
 " Set the title of the Terminal to the currently open file
+set t_ts=];
+set t_fs=
 function! SetTerminalTitle()
     let titleString = expand('%:t')
     if len(titleString) > 0
