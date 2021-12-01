@@ -1,0 +1,71 @@
+# /Users/neo/.config/tmuxinator/compeon.yml
+
+name: GitLab
+root: ~/gitlab-development-kit/
+
+# Project hooks
+
+# Runs on project start, always
+# on_project_start: command
+
+# Run on project start, the first time
+# on_project_first_start: gdk update
+
+# Run on project start, after the first time
+# on_project_restart: command
+
+# Run on project exit ( detaching from tmux session )
+on_project_exit: gdk stop
+
+# Run on project stop
+# on_project_stop: command
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: GDK
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 2
+
+
+windows:
+  - WorkLog:
+     root: ~/src/work_log
+     layout: even-horizontal
+     panes:
+        - vim log.rb
+        - git status
+        - watch -c -n 30 "istats"
+  - Code:
+     root:  ~/gitlab-development-kit/gitlab
+     layout: 7a65,547x164,0,0{433x164,0,0,1,113x164,434,0[113x83,434,0,6,113x80,434,84,7]}
+     panes:
+        - vim:
+          - vim .
+        - console:
+          - bundle exec rails c
+        - tests:
+          - bundle exec guard
+  - GDK:
+     layout: even-horizontal
+     panes:
+        - gdk start
+        - watch -n 15 "gdk status"
+        - gdk tail
+  - CustomersDot:
+     root: ~/src/customers-gitlab-com
+     layout: even-horizontal
+     panes:
+       - foreman:
+          - asdf exec pg_ctl start -D ./db/postgresql
+          - bundle exec foreman start
+  - Snowplow:
+     root: ~/src/snowplow-micro-configuration
+     layout: even-horizontal
+     panes:
+        - sh snowplow-micro.sh
