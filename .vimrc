@@ -80,6 +80,12 @@ map <down> <C-w><down>
 map <left> <C-w><left>
 map <right> <C-w><right>
 
+" Shortcuts to grow/shrink panes
+nnoremap <silent> <leader>H 50<C-w><
+nnoremap <silent> <leader>J 50<C-w>+
+nnoremap <silent> <leader>K 50<C-w>-
+nnoremap <silent> <leader>L 50<C-w>>
+
 " Use 'H' and 'L' keys to move to start/end of the line
 noremap H g^
 noremap L g$
@@ -313,7 +319,7 @@ nnoremap <silent> <Leader>F :FzfAg <C-R><C-W><CR>
 let g:run_rspec_bin = 'bundle exec rspec'
 " let g:run_rspec_command_option = ''
 nnoremap <leader>r :RunSpec<CR>
-nnoremap <leader>L :RunSpecLine<CR>
+nnoremap <leader>T :RunSpecLine<CR>
 nnoremap <leader>e :RunSpecLastRun<CR>
 nnoremap <leader>R :RunSpecCloseResult<CR>
 
