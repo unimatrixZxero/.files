@@ -169,8 +169,9 @@ set statusline+=\ %c:%l/%L
 set statusline+=\ %t
 
 " Settings PLUGIN: fzf.vim{{{
-let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4 --preview 'bat --color=always --style=header,grid --line-range :300 {}'"
-let g:fzf_layout = { 'down': '~40%' }
+" let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:30%' --layout reverse --margin=1,4 --preview 'bat --color=always --style=grid --line-range :10 {}'"
+let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:30%' --layout reverse --margin=1,4 --preview 'head -n 10 {}'"
+let g:fzf_layout = { 'down': '~20%' }
 
 " Populate quickfix list with selected files
 function! s:build_quickfix_list(lines)
@@ -203,12 +204,13 @@ command! -nargs=? -bang -complete=dir FzfFiles
 
 " Mappings
 nnoremap <silent> <leader>f :FzfAg<CR>
-nnoremap <silent> <leader>o :FzfFiles<CR>
+nnoremap <silent> <leader>o :FzfGFiles<CR>
+nnoremap <silent> <leader>p :FzfFiles<CR>
 nnoremap <silent> <leader>O :FzfFiles!<CR>
 nnoremap <silent> <leader>l  :FzfBuffers<CR>
 nnoremap <silent> <leader>b :FzfBLines<CR>
 nnoremap <silent> <leader>`  :FzfMarks<CR>
-nnoremap <silent> <leader>p :FzfCommands<CR>
+nnoremap <silent> <leader>P :FzfCommands<CR>
 nnoremap <silent> <leader>t :FzfFiletypes<CR>
 nnoremap <silent> <F1> :FzfHelptags<CR>
 inoremap <silent> <F1> <ESC>:FzfHelptags<CR>
