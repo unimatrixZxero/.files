@@ -216,7 +216,7 @@ nnoremap <silent> <F1> :FzfHelptags<CR>
 inoremap <silent> <F1> <ESC>:FzfHelptags<CR>
 cnoremap <silent> <expr> <C-p> getcmdtype() == ":" ? "<C-u>:FzfHistory:\<CR>" : "\<ESC>:FzfHistory/\<CR>"
 cnoremap <silent> <C-_> <C-u>:FzfCommands<CR>
-nnoremap <silent> <leader>g :Gblame<CR>
+nnoremap <silent> <leader>g :Git blame<CR>
 
 " fzf.Tags uses existing 'tags' file or generates it otherwise
 nnoremap <silent> <leader>] :FzfTags<CR>
