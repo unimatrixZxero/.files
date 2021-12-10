@@ -137,6 +137,7 @@ call plug#begin('~/.vim/plugged')
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
   Plug 'altercation/vim-colors-solarized'
+  Plug 'crusoexia/vim-monokai'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'dominikduda/vim_current_word'
   Plug 'terryma/vim-smooth-scroll'
@@ -155,7 +156,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
-colorscheme solarized
+colorscheme monokai
 
 set statusline=\ %M
 set statusline+=\ %{HasPaste()}
