@@ -38,7 +38,7 @@ windows:
      root: ~/src/work_log
      layout: even-horizontal
      panes:
-        - vim log.rb
+        - nvim log.rb
         - git status
         - watch -c -n 30 "istats"
   - Code:
@@ -46,10 +46,10 @@ windows:
      layout: 7a65,547x164,0,0{433x164,0,0,1,113x164,434,0[113x83,434,0,6,113x80,434,84,7]}
      panes:
         - vim:
-          - vim .
-        - console:
-          - bundle exec rails c
-        - tests:
+          - nvim .
+        - jest:
+          - yarn jest --watch
+        - rspec:
           - bundle exec guard
   - GDK:
      layout: even-horizontal
