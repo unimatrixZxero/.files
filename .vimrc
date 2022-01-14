@@ -218,6 +218,7 @@ inoremap <silent> <F1> <ESC>:FzfHelptags<CR>
 cnoremap <silent> <expr> <C-p> getcmdtype() == ":" ? "<C-u>:FzfHistory:\<CR>" : "\<ESC>:FzfHistory/\<CR>"
 cnoremap <silent> <C-_> <C-u>:FzfCommands<CR>
 nnoremap <silent> <leader>g :Git blame<CR>
+nnoremap <silent> <leader>d :GitGutterLineHighlightsToggle<CR>
 
 " fzf.Tags uses existing 'tags' file or generates it otherwise
 nnoremap <silent> <leader>] :FzfTags<CR>
@@ -325,4 +326,8 @@ nnoremap <leader>r :RunSpec<CR>
 nnoremap <leader>T :RunSpecLine<CR>
 nnoremap <leader>e :RunSpecLastRun<CR>
 nnoremap <leader>R :RunSpecCloseResult<CR>
+
+
+nnoremap <leader>E :! yarn run lint:eslint %<CR>
+nnoremap <leader>U :! yarn prettier --write %<CR>
 
