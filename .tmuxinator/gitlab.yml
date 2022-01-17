@@ -38,7 +38,7 @@ windows:
      root: ~/src/work_log
      layout: even-horizontal
      panes:
-        - nvim log.rb
+        - nvim log.md
         - git status
         - watch -c -n 30 "istats"
   - Code:
