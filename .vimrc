@@ -90,6 +90,20 @@ nnoremap <silent> <leader>L 50<C-w>>
 noremap H g^
 noremap L g$
 
+" Tab Switching
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
+noremap <c-right> :tabnext<cr>
+noremap <c-left> :tabprevious<cr>
+
 " In Insert mode, treat pasting form a buffer as a separate undoable operation
 " Which can be undone with '<C-o>u'
 inoremap <C-r> <C-g>u<C-r>
